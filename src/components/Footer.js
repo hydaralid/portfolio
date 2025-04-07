@@ -22,22 +22,29 @@ function Footer() {
     <Container fluid className="footer" style={{ padding: "40px 20px", backgroundColor: "#111" }}>
       <Row className="justify-content-center">
         {/* Contact Details */}
-        <Col md={6} className="home-about-social">
+        <Col md={6} className="home-about-social mb-4">
           <div style={boxStyle}>
-          <h2>Contact Details</h2>
+            <h2 className="mb-3">Contact Details</h2>
 
-          <div style={{ display: "flex", gap: "250px",fontSize: "20px"  }} className="mx-4">
-          <p><strong>Name:</strong> Hydar Ali D</p>
-          <p><strong>Phone:</strong> +91-7892547975</p>
-          </div>
+            <Row className="mb-2">
+              <Col xs={12} sm={6} className="mb-2 mb-sm-0">
+                <p className="m-0"><strong>Name:</strong> Hydar Ali D</p>
+              </Col>
+              <Col xs={12} sm={6}>
+                <p className="m-0"><strong>Phone:</strong> +91-7892547975</p>
+              </Col>
+            </Row>
 
-          <div style={{ display: "flex", gap: "160px",fontSize: "20px" }} className="mx-4">
-          <p><strong>Email:</strong> hydaralid@gmail.com</p>
-          <p><strong>Place:</strong> Bangalore</p>
-          </div>
+            <Row>
+              <Col xs={12} sm={6} className="mb-2 mb-sm-0">
+                <p className="m-0"><strong>Email:</strong> hydaralid@gmail.com</p>
+              </Col>
+              <Col xs={12} sm={6}>
+                <p className="m-0"><strong>Place:</strong> Bangalore</p>
+              </Col>
+            </Row>
           </div>
         </Col>
-
 
         {/* Find Me On */}
         <Col md={6} className="home-about-social">
@@ -52,6 +59,7 @@ function Footer() {
                 display: "flex",
                 justifyContent: "center",
                 gap: "15px",
+                flexWrap: "wrap",
               }}
             >
               <li className="social-icons">
@@ -93,12 +101,12 @@ function Footer() {
       </Row>
 
       {/* Footer Bottom Row */}
-      <Row className="text-center mt-4 justify-content-end">
-        <Col md={4} className="footer-copywright text-end">
+      <Row className="text-center mt-4">
+        <Col className="footer-copywright">
           <h5 style={{ color: "white" }}>© {year} Hydar Ali</h5>
         </Col>
       </Row>
-  </Container>
+    </Container>
   );
 }
 
