@@ -110,19 +110,6 @@ function ResumeNew() {
             </div>
           </Row>
         )}
-
-        <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-            className="download-button"
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
       </Container>
     </div>
   );
